@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<head>
+    <title>yashoda hospitals homepage</title>
+    <link rel="stylesheet" type="text/css" href="menu.css" />
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="media1.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Antic' rel='stylesheet'>
+    <meta  name="viewport" content="width=device-width,initial-sacle=1.0" />
+    <script src="https://use.fontawesome.com/53c62c7c56.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous">
+    </script>
+    <script> 
+$(document).ready(function(){
+    $("#mf").click(function(){
+        $(".ff").animate({left: '0px'});
+    });
+    $("#fm").click(function(){
+        $(".ff").animate({left: '-374px'});
+    });
+});
+        var p=document.querySelector("onloading");
+        function loading(p)
+        {
+            p.style.display="block";
+        }
+</script> 
+    <style>
+        #fm
+        {
+           position: relative;
+            left: 20px;
+            cursor: pointer;
+            font-weight: lighter;
+        }
+            .onloading
+            {
+                height: 100vh;
+                width: 100vw;
+                background-color: lightgrey;
+                text-align: center;
+                display: none;
+                position: fixed;
+                top:0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                z-index: 111111111;
+            }
+            .onloading div
+            {
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                background-color: orangered;
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translateY(-25px);
+                transform: translateX(-25px);
+            }
+    </style>
+</head>
+    <body onload="loading">
+        <div class="onloading">
+            <div></div>
+        </div>
+        <div class="container">
+            <div class="left">
+             <h1><span style="font-size: 80px;line-height: 80px; ">hospital</span><span id="whole"><span id="x">management</span><br /><span id="y">system</span></span></h1>
+                <ul id="social1">
+                    <li><a href="https://www.linkedin.com/company/yashoda-hospitals" target="_blank" style="border-color:#0077B5 ;"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/yashoda-hospitals" target="_blank" style="border-color:#0084b4;" ><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li ><a href="#" style="border-color: #d34836;"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                    <li ><a href="https://www.facebook.com/YashodaHospitals/" style="border-color:#3b5998 ;" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                </ul>
+                <label class="burger" for="menuslider">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </label>
+                <input type="checkbox" id="menuslider" class="smoosh"/>
+                <div class="slidemenu">
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">careers</a></li>
+                        <li><a href="#">services</a></li>
+                        <li><a href="#">appointments</a></li>
+                        <li><a href="#">our team</a></li>
+                        <li><a href="#">medical tests</a></li>
+                        <li><a href="#">contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+            <ul id="outside">
+                <li><a href="home.html" id="home">home</a>
+                    <div class="insidemenu"><ul id="inside">
+                    <li><a href="#">home1</a></li>
+                    <li><a href="#">home2fdsfds</a></li>
+                    <li><a href="#">home3fdsfffsd</a></li>
+                    <li><a href="#">products1 ddsddcs</a></li>
+                    <li><a href="#">products1dsfds</a></li>
+                    <li><a href="#">products1 fdsfdsfsdfdsf</a></li>
+                    <li><a href="#">products1 fdsfds</a></li>
+                    <li><a href="#">products1fdsfdsf</a></li>
+                    <li><a href="#">products1</a></li>
+                    <li><a href="#">home4fdf</a></li>
+                    </ul></div>
+                </li>
+                <li><a href="#" id="careers">careers</a></li>
+                <li><a href="#" id="services">services</a>
+                    <span class="insidemenu"><ul id="inside">
+                    <li><a href="#">products1</a></li>
+                    <li><a href="#">products1</a></li>
+                    <li><a href="#">products1fdsfdsf</a></li>
+                    <li><a href="#">products1</a></li>
+                    <li><a href="#">products1fdsfds</a></li>
+                    <li><a href="#">products1</a></li>
+                    <li><a href="#">products1fdsfds</a></li>
+                    <li><a href="#">products1</a></li>
+                    <li><a href="#">products1fdsfdsfd</a></li>
+                    <li><a href="#">products1</a></li>
+                    </ul></span>
+                </li>
+                <li><a href="#" id="appointments">appointments</a></li>
+                <li><a href="#" id="ourteam">our team</a></li>
+                <li><a href="#" id="medical">tests</a></li>
+                <li><a href="contact.html" id="contact">contact us</a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="slider">
+            <span style="font-size: 80px;color: seashell;position: absolute;top:50%;transform: translateY(-50%);"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+            <span style="font-size: 80px;color: seashell;position: absolute;right: 0%;top:50%;transform: translateY(-50%);"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+            <figure class="figure2">
+                <div class="slide">
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    <blockquote>People pay the doctor for his trouble ,for his kindness they still remain in his debt</blockquote>
+                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                    <p>mark twain</p>
+                </div>
+                <div class="slide">
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    <blockquote>Observation, Reason, Human Understanding, Courage; these make the physician</blockquote>
+                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                    <p>henry nicolas</p>
+                </div>
+                <div class="slide">
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    <blockquote>To array a man's will against his sickness is the supreme art of medicine</blockquote>
+                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                    <p>chris gayle</p>
+                </div>
+                <div class="slide">
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    <blockquote>The art of medicine consists in amusing the patient while nature cures the disease</blockquote>
+                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                    <p>tim paine</p>
+                </div>
+                <div class="slide">
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    <blockquote>
+                    Doctors think a lot of patients are cured who have simply quit in disgust</blockquote>
+                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                    <p>alisater cook</p>
+                </div>       
+            </figure>
+        </div>
+        <div class="container0">
+            <h1>centers of excellence</h1>
+            <h2 style="text-align: center;color:black;">&clubs;&clubs;&clubs;</h2>
+        </div>
+        <div class="container1">
+                <div class="box">
+                    <div class="institute" style="color: #373737;"><h2>Yashoda Heart Institute</h2></div>
+                <div class="image"><img src="assets/images/cardiology.png" /></div>
+                <p class="para">Yashoda Heart Institute offers comprehensive, multi-disciplinary programmes for the prevention, diagnosis and treatment of Cardiological and Cardiothoracic conditions.</p>
+                    <div class="read"><a href="#">read more....</a></div>
+                </div>
+                <div class="box">
+                    <div class="institute" style="color: #373737;"><h2>neurology institute</h2></div>
+                <div class="image"><img src="assets/images/neurology.png" /></div>
+                <p class="para">The Institute is a regional leader in treating neurological disorders. They diagnose and treat more than 1100 neurological conditions and diseases, including some of the rarest and most challenging conditions.</p>
+                    <div class="read"><a href="#">read more....</a></div>
+                </div>
+                <div class="box">
+                    <div class="institute" style="color: #373737;"><h2>Cancer Institute</h2></div>
+                 <div class="image"><img src="assets/images/cancer.png" /></div>
+                 <p class="para">Yashoda Cancer Institute has grown to become one of the Center of Excellence in India. With three dedicated, and independent units (Somajiguda, Secunderabad & Malakpet)</p>
+                    <div class="read"><a href="#">read more....</a></div>
+                </div>
+                 <div class="box">
+                     <div class="institute" style="color: #373737;"><h2>Center for Orthopaedics</h2></div>
+                 <div class="image"><img src="assets/images/bones.png" /></div>
+                <p class="para">The Center for Orthopaedics offers the most comprehensive health care systems and virtually all of the finest, latest treatments, technologies and services comparable to the best available.</p>
+                    <div class="read"><a href="#">read more....</a></div>
+                </div>
+                <div class="box">
+                    <div class="institute" style="color: #373737;"><h2>nephrology institute</h2></div>
+                 <div class="image"><img src="assets/images/renal.png" /></div>
+                <p class="para">Yashoda Hospitals Center for Nephrology & Urology has expertise in Renal Biopsies, Renal Angiography and Angioplasty, Haemodialysis, special forms of dialysis like continuous renal replacement therapy</p>
+                    <div class="read"><a href="#">read more....</a></div>
+                </div>
+                <div class="box">
+                    <div class="institute" style="color:#373737;"><h2>Transplant center</h2></div>
+                 <div class="image"><img src="assets/images/transplants.png" /></div>
+                 <p class="para">Liver Transplant is a major operation that takes place only in a specialized transplant center. During a Liver Transplantation, the surgeon removes the diseased liver and replaces</p>
+                    <div class="read"><a href="#">read more....</a></div>
+                </div>
+        </div>
+        <div class="container3">
+        <div class="division">
+            <h1>62</h1>
+            <h2>medical <br /> departments</h2>
+        </div>
+        <div class="division">
+            <h1>700</h1>
+            <h2>specialist <br /> doctors</h2>
+        </div>
+        <div class="division">
+            <h1>3</h1>
+            <h2>independent <br /> hospitals</h2>
+        </div>
+        <div class="division">
+            <h1>1710</h1>
+            <h2>beds</h2>
+        </div>
+        <div class="division">
+            <h1>5,00,000 +</h1>
+            <h2>happy patients <br /> every year</h2>
+        </div>
+    </div>
+    <div class="container4" style="padding: 0px 200px;">
+        <span class="doc"><i class="fa fa-user-md" aria-hidden="true"></i></span>
+        <h1>find a doctor</h1>
+        <div class="find">
+            <div class="find1">
+                <label style="border-bottom: none;border-right: none;">choose category</label>
+                <select style="border-bottom: none;border-right: none;">
+                    <option>cardiologist</option>
+                    <option>dentist</option>
+                    <option>physchotherapist</option>
+                    <option>renal</option>
+                    <option>transplants</option>
+                </select>
+            </div>
+            <div class="find1">
+                <label style="border-bottom: none;">choose branch</label>
+                <select style="border-bottom: none;">
+                    <option>secundrabad</option>
+                    <option>somajiguda</option>
+                    <option>malakpet</option>
+                </select>
+        </div>
+    </div>
+        <div class="find1" id="slot">
+                <label style="border-bottom: none;">select time slot</label>
+                <select>
+                    <option>morning(9am to 12pm)</option>
+                    <option>afternoon(12am to 5pm)</option>
+                    <option>evenings(5am to 9pm)</option>
+                </select>
+        </div>
+        <button type="submit">submit</button>
+        </div>
+        <div class="container5">
+            <h1><span id="globe"><i class="fa fa-globe" aria-hidden="true"></i></span>ur locations</h1>
+            <ul>
+                <li><p>locate on map</p></li>
+                <li><a href="#">secundrabad</a></li>
+                <li><a href="#">somajiguda</a></li>
+                <li><a href="#">malakpet</a></li>
+            </ul>
+            <div id="googlemap"></div>
+                 <script>
+      function initMap() {
+        var uluru = {lat: 17.442151, lng:78.49704599999995};
+        var map = new google.maps.Map(document.getElementById('googlemap'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXu66ZsDJWZBr0uzc63Zj_jjuKqiaq7mY&callback=initMap">
+    </script>
+        </div>
+            <div class="address">
+                <div class="address1">
+                    <h1><span style="color:black;font-size: 55px;font-weight: bold;"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></span></h1>
+                <h1>drop us a mail</h1>
+                <div class="mail"><input type="email" placeholder="example@gmail.com" /><input type="submit" value="send" /></div>
+                </div>
+        </div>
+        <footer>
+        <div class="foot">
+            <div class="box">
+                <h2 style="text-align: center;text-transform: uppercase;color: floralwhite;display:block;">quick links</h2>
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">appointmnets</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">categories</a></li>
+                    <li><a href="#">medical tests</a></li>
+                    <li><a href="#">contact us</a></li>
+                </ul>
+            </div>
+            <div class="box" style="flex: 2.3;">
+                <h2 style="text-align: center;text-transform: uppercase;color: floralwhite;display:block;">contact us</h2>
+                <div class="contact" style="background-image: url(map.png);background-position: center;background-repeat: no-repeat;background-size:contain;">
+                <div>
+                    <ul style="color: white;text-transform: capitalize;font-weight: bold;letter-spacing: 1px;">
+                        <li>Dr.padmanav phukan street</li>
+                        <li>opp paradise</li>
+                        <li>secundrabad</li>
+                        <li>hyderabad</li>
+                        <li>telangana 501510</li>
+                        <li>fax:0440-1222222</li>
+                        <li>mobile:9866093888</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul style="color: white;text-transform: capitalize;font-weight: bold;letter-spacing: 1px;">
+                        <li>Dr.safiur rahman street</li>
+                        <li>opp red park</li>
+                        <li>malakpet</li>
+                        <li>hyderabad</li>
+                        <li>telangana 501510</li>
+                        <li>fax:0440-1554546</li>
+                        <li>mobile:9866093777</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul style="color: white;text-transform: capitalize;font-weight: bold;letter-spacing: 1px;">
+                        <li>Dr.chandan pandey street</li>
+                        <li>opp green park</li>
+                        <li>somajiguda</li>
+                        <li>hyderabad</li>
+                        <li>telangana 501510</li>
+                        <li>fax:0440-1778455</li>
+                        <li>mobile:9866093999</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <div class="box">
+                 <h2 style="text-align: center;text-transform: uppercase;color: floralwhite;display:block;">follow us on</h2>
+                <ul id="social">
+                    <li><a href="https://www.facebook.com/YashodaHospitals/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/brandyashoda?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/yashoda-hospitals" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+           </div>
+           </footer>
+         <div class="copyright">
+             <h2>copy  rights<sup>&copy;</sup>  by  pranai  &nbsp;&nbsp; &nbsp;  all  rights reserved<sup>&reg;</sup> by 20<sup>th</sup>centurycoding <span style="position:relative;left:50px;">made with <i class="fa fa-heart" style="color:red;"></i> in india</span></h2>
+         </div>
+        <div class="ff">
+            <div class="apform">
+            <h2 style="text-align: center;text-decoration-line: underline;
+    text-decoration-color: black;">book your appointments<span id="fm"><i class="fa fa-arrow-left" aria-hidden="true"></i></span></h2>
+                
+            <form>
+                <fieldset>
+                    <legend><h2>fill form</h2></legend>
+                    <label for="pname"><h2 id="ta">patient's name</h2></label>
+                    <span style="display:block;"><i class="fa fa-user" aria-hidden="true" style="font-size: 18px;"></i><input type="text" id="pname" style="display: inline-block;"/></span>
+                    <label for="pmoblie"><h2 id="ra">moblie number</h2></label>
+                    <span><i class="fa fa-mobile" aria-hidden="true" style="font-size: 22px;"></i></span><input type="mobile" id="pmoblie" style="display: inline-block;"/>
+                    <label id="select"><h2>select category</h2></label>
+                    <select>
+                        <option>cardilogist</option>
+                        <option>gynacologist</option>
+                        <option>dentist</option>
+                    </select>
+                    <label for="call"><h2 style="height: 30px; padding: 0px 0px;display: inline-block;width: 35%;margin: 10px 0px;">get <span style="text-transform: lowercase;">a</span> call</h2></label> <input type="checkbox" id="call" />
+                    <button type="submit">submit</button>
+                </fieldset>
+            </form>
+            </div>
+            <div id="book">
+                <label id="mf">b<br />o<br />o<br />k<br />&nbsp;&nbsp;&nbsp;   a<br />p<br />p<br />o<br />i<br />n<br />t<br />m<br />e<br />n<br />t</label>
+            </div>
+        </div>
+         <span id="bookmark" class="bmark" style="cursor: pointer;"><div><h1><i class="fa fa-chevron-up" aria-hidden="true"></i></h1><h3 style="text-transform: uppercase;font-weight: 900;color:black;">top</h3></div></span>
+        <script>
+            var x=document.querySelector('#bookmark');
+            x.addEventListener('click',singham,false);
+            function singham()
+            {
+              window.addEventListener('scroll',singha,false);
+            }
+            function singha()
+            {
+                window.screenTop=0;
+            }
+            var p=document.querySelector(".onloading");
+            function loading()
+            {
+            p.style.display="block";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,576 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    overflow-y: hidden;
+    background-color: #ffde37;
+    //background:linear-gradient(orangered,red,black,black);
+    font-family:'Poiret One', cursive ;
+}
+body::-webkit-scrollbar
+{
+    width: 13px;
+    background-color:whitesmoke;
+}
+body::-webkit-scrollbar-thumb
+{
+    background-color:#df4042;
+}
+body::-webkit-scrollbar-track-piece
+{
+    width: 13px;
+    height: 800px;
+}
+body::-webkit-scrollbar-thumb:hover
+{
+background-color:#df4042;
+}
+body::-webkit-scrollbar-thumb:active
+{
+background-color:#df4042;
+}
+/*header pulsewave and heartbeat animation*/
+.pulse
+{
+    max-width: 100%;
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+    background-color:transparent;
+    
+}
+.pulse h1
+{
+    text-transform: uppercase;
+    font-size: 60px;
+    text-align: center;
+    line-height: 120px;
+    color: black;
+}
+.fa-heartbeat
+{
+    line-height: 120px;
+    height:70px;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 0;
+    animation: pranai 1.2s 0s infinite ease-in-out;   
+}
+@keyframes pranai
+{
+    0%
+    {
+        transform: scale(1);
+        opacity: 1;
+    }
+    25%
+    {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    50%
+    {
+        transform: scale(1.3);
+        opacity: 1;
+    }
+    75%
+    {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100%
+    {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+/*-----------------------------------------header end---------------------------------*/
+/* strip starts here   */
+.strip
+{
+    width:100%; 
+    height:60px;
+    background-color: transparent;
+    text-align: center;
+    padding: 5px 0px;
+}
+.strip h1
+{
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    padding: 0;
+    display: inline-block;
+    line-height: 60px;
+    font-size:35px;
+    color:black;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transform: scale(0);
+    animation: giri 2s 1s forwards 1 ease-in-out;
+}
+.strip .fa-user-md
+{
+    font-size: 60px;
+}
+@keyframes giri
+{
+    0%
+    {
+        
+    }
+    50%
+    {
+       transform: scale(1.2);
+    
+    }
+    100%
+    {
+        transform: scale(1);
+        
+    }
+    
+}
+/*-----------------------------------------strip end---------------------------------*/
+/* main content starts here */
+.container
+{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    margin-bottom: 5px;
+    background-color: transparent;
+}
+.left
+{
+    flex: 1.6;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-left: 1.5px;
+    
+}
+.right
+{
+    flex: 1;
+    opacity: 0;
+    position: relative;
+    animation:sss 2s 5s 1 forwards ease-out;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+@keyframes sss
+{
+    0%
+    {
+        height: 0px;
+        
+    }
+    100%
+    {
+        height: 400px;
+        opacity: 1;
+    }
+}
+
+.figure2
+{
+    display: block;
+    width: 500%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: sadhana 50s 0s infinite ease-in-out;
+}
+@keyframes  sadhana
+{
+    0%
+    {
+      
+    }
+    10%
+    {
+        left: 0%;
+    }
+    12%
+    {
+       left: -100%;
+    }
+    22%
+    {
+       left: -100%;  
+    }
+    24%
+    {
+      left: -200%  
+    }
+    34%
+    {
+        left: -200%;
+    }
+    36%
+    {
+      left: -300%;  
+    }
+    46%
+    {
+        left: -300%;
+    }
+    48%
+    {
+      left: -400%  
+    }
+    58%
+    {
+        left: -400%;
+    }
+    60%
+    {
+       left: -300%;        
+    }
+    70%
+    {
+        left: -300%;
+    }
+    72%
+    {
+       left: -200%;    
+    }
+    82%
+    {
+        left: -200%;
+    }
+    84%
+    {
+       left: -100%;   
+    }
+    94%
+    {
+        left: -100%;
+    }
+    104%
+    {
+        left: 0%;
+    }
+}
+.slide
+{
+    float: left;
+    width: 20%;
+}
+.slide .fa
+{
+    font-size: 40px;
+}
+.slide .fa-quote-left
+{
+    display: inline-block;
+    position: relative;
+    color: black;
+    left: 0%;
+    top: 0%;
+    
+}
+.slide .fa-quote-right
+{
+    display: inline-block;
+    position: relative;
+    color: black;
+    left: 100%;
+    transform: translateX(-100%);
+    
+}
+.slide blockquote
+{
+    padding: 30px;
+    font-weight:900;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.slide p
+{
+    
+    text-align:right;
+    position: relative;
+    text-transform: capitalize;
+    color: black;
+    font-weight: bolder;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.slide p:before
+{
+    content: "";
+    position: absolute;
+    top:50%;
+    height: 3px;
+    width:80px;
+    background-color: black;
+}
+.slide:nth-child(1) p:before
+{
+    right: 150px;
+}
+.slide:nth-child(2) p:before
+{
+    right: 167px;
+}
+.slide:nth-child(3) p:before
+{
+    right: 152px;
+}
+.slide:nth-child(4) p:before
+{
+    right: 130px;
+}
+.slide:nth-child(5) p:before
+{
+    right: 160px;
+}
+
+.right form
+{
+    width: 80%;
+    display: block;
+    position: absolute;
+    height: 400px;
+    left: 50%;
+    margin-left: 10px;
+    transform: translateX(-55%);
+}
+.right form h2
+{
+    color:black;
+    font-weight: 400;
+    margin: 20px 0px;
+    padding-left: 2px;
+    text-align: left;
+    text-transform: uppercase;
+    display:  block;
+    font-weight: 900;
+}
+.label
+{
+    color:black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size:20px;
+    position: relative;
+}
+.right form input[type="text"],.right form input[type="number"]
+{
+    display: block;
+    width: 80%;
+    height: 30px;
+    z-index: 11111111;
+    background-color: transparent;
+    font-size: 23px;
+    margin-bottom: 3px;
+    border-color: transparent;
+    border-bottom: 1px solid black;
+}
+.right form input[type="text"]:focus,.right form input[type="number"]:focus
+{
+    outline: none;   
+    border: none;
+    border-bottom: 2px solid black;
+}
+.right form input[type="text"]:focus ~ #label1
+{ 
+    color: black;
+}
+.right form input[type="number"]:focus ~ #label2
+{
+    color: black;   
+}
+.right form .or
+{
+    color:black;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+}
+.right form .or:before
+{
+    content: "";
+    position: absolute;
+    top:50%;
+    left: 0%;
+    height: 2px;
+    width: 46%;
+    background-color:black;
+}
+.right form .or:after
+{
+    content: "";
+    position: absolute;
+    top:50%;
+    right: 0%;
+    height: 2px;
+    width: 46%;
+    background-color: black;
+}
+.right form button
+{
+    font-family:'Poiret One', cursive ;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    outline: none;
+    width: 100%;
+    position: relative;
+    left: 50%;
+    border: 1px solid black;
+    transform: translateX(-50%);
+    background-color: transparent;
+    color:black;
+    font-size: 15px;
+    padding: 5px 0px;
+    margin: 20px 0px;
+    cursor: pointer;
+    outline-color: transparent;
+}
+.right form button:hover{
+    box-shadow: 1px 1px 4px black;
+}
+/* popup styles starts here*/
+form .popup
+{
+    text-align: right;
+    font-weight:bold;
+}
+.popup1
+{
+    text-align: left;
+    position:absolute;
+    height: 400px;
+    width:101%;
+    top: 0%;
+    left: 0%;
+    z-index: 1111;
+    background-color: #ffde37;
+    //background:linear-gradient(orangered,red,black,black);
+    transform: scale(0);
+    padding: 10px;
+    padding-top: 30px;
+    box-shadow: 1px 1px 1px 1px black;
+}
+#popuplabel
+{
+    letter-spacing: 1px;
+    font-weight: bolder;
+    font-size: 17px;
+    color: black;
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    text-decoration: underline;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.popup1 label
+{
+    letter-spacing: 1px;
+    font-weight: bolder;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white;
+}
+.popup input
+{
+    width: 70%;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    height: 35px;
+    font-size: 24px;
+    color: black;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    outline-color: transparent;
+    outline-style: none;
+    margin-bottom: 10px;
+}
+.popup input:focus
+{
+    border-bottom: 3px solid black;
+}
+#otp
+{
+    width: 40%;
+}
+#register
+{
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    margin-top: 10px;
+    box-shadow: none;
+    font-weight: bolder;
+}
+.smoosh
+{
+    display: none;
+    height: 0;
+    width: 0;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;  
+}
+.smoosh:checked ~ .popup1
+{
+    animation: popup 0.2s 0s 1 forwards ease-out;
+}
+@keyframes popup
+{
+    0%
+    {
+      transform:  scale(0);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+/*------------------------------maincontent ends----------------------------*/
+/* footer section*/
+.footer
+{
+    width: 100%;
+    background-color: transparent;
+    height: 50px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+.footer h2
+{
+    font-size: 15px;
+    color:black;
+    font-weight: bolder;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+/*------------------------------footer ends----------------------------*/
+/* contact address */
+//.contactus
+{
+    height: 250px;
+    width: 250px;
+    background-color: aqua;
+    position: absolute;
+    top:0%;
+    left: 0%;
+}

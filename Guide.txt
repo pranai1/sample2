@@ -1,0 +1,6 @@
+this is a hospital management website(web application) developed in my early days of learning web development.
+->index page is the root page .
+->since this web application is only to show my front end skills i have not connected it with any databases so 
+just click move to website link .
+->on the home page we have the meat of the application where i have placed navigation bar,some main content,a footer which we usally find in web site or web application.
+->note:  not all links are working beacause my idea was to show my front skills only
